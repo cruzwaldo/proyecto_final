@@ -1,0 +1,118 @@
+main {
+    min-height: calc(100vh - 180px);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacto {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+.contacto h1 {
+    margin-bottom: 15px;
+    color: #075985;
+    font-size: 38px;
+    text-align: center;
+}
+.descripcion {
+    margin-bottom: 30px;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+.formulario_contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #999999;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #0099cc;
+    box-shadow: 0 0 0 3px rgba(0, 153, 204, 0.15);
+}
+
+.campo select {cursor: pointer;
+}
+
+.campo textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.formulario_contacto button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #075985;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.formulario_contacto button:hover {
+    background-color: #0099cc;
+    transform: translateY(-2px);
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.formulario_contacto button:active {
+    transform: translateY(0);
+}
+.campo input:valid,
+.campo select:valid,
+.campo textarea:valid {
+    border-color: #cccccc;
+}
+
+
